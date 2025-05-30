@@ -46,7 +46,7 @@ export function Ay2425S2Page() {
         slides: '/~bskch/files/ay2425s2/recitation3.pdf',
         extra: {
           name: 'Extra question',
-          link: '/~bskchfiles/ay2425s2/Main.java',
+          link: '/~bskch/files/ay2425s2/Main.java',
         }
       },
       {
@@ -78,7 +78,7 @@ export function Ay2425S2Page() {
         slides: '/~bskch/files/ay2425s2/recitation9.pdf',
         extra: {
           name: 'Stream Prac',
-          link: '/~bskchfiles/ay2425s2/stream-practice.zip',
+          link: '/~bskch/files/ay2425s2/stream-practice.zip',
         }
       },
     ],

@@ -4,6 +4,7 @@ import { ContactPage } from '@/pages/Contact.page';
 import { Ay2425S1Page } from '@/pages/Ay2425-s1.page';
 import { Ay2425S2Page } from '@/pages/Ay2425-s2.page';
 import { Ay2526S1Page } from '@/pages/Ay2526-s1.page';
+import { LlParsingPage } from './pages/ll-parsing.page';
 
 const router = createHashRouter(
   [
@@ -26,6 +27,10 @@ const router = createHashRouter(
     {
       path: '/ay2526-s1',
       element: <Ay2526S1Page />
+    },
+    {
+      path: '/blog/ll-parsing',
+      element: <LlParsingPage />,
     },
   ],
 );

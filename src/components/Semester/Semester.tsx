@@ -53,7 +53,7 @@ export function Semester(semesterContent: SemesterContent) {
               variant='subtle'
               component='a'
               ta="center"
-              href={row.slides}
+              href={row.extra.link}
               className={classes.link}
               download
             >
