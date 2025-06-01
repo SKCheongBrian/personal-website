@@ -26,23 +26,6 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links, link }: 
   const [opened, setOpened] = useState(initiallyOpened || false);
   const navigate = useNavigate();
   const { setColorScheme } = useMantineColorScheme();
-  // const items = (hasLinks ? links : []).map((link) => (
-  //   <Text<'a'>
-  //     component="a"
-  //     className={classes.link}
-  //     href={link.link}
-  //     key={link.label}
-  //     onClick={() => {
-  //      if (link.theme) {
-  //        setColorScheme(link.theme);
-  //      } else if (link.link) {
-  //        link.link
-  //      }
-  //     }}
-  //   >
-  //     {link.label}
-  //   </Text>
-  // ));
   const items = (hasLinks ? links : []).map((subitem) => {
     const isThemeItem = !!subitem.theme;
 
@@ -74,7 +57,7 @@ export function LinksGroup({ icon: Icon, label, initiallyOpened, links, link }: 
       }} className={classes.control}>
         <Group justify="space-between" gap={0}>
           <Box style={{ display: 'flex', alignItems: 'center' }}>
-            <ThemeIcon variant="light" size={30}>
+            <ThemeIcon variant="light" color="myColor.4" size={30}>
               <Icon size={18} />
             </ThemeIcon>
             <Box ml="md">{label}</Box>

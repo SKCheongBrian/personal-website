@@ -1,5 +1,6 @@
 import { LayoutPage } from '@/pages/Layout.page';
 import { Semester, SemesterContent } from '@/components/Semester/Semester';
+import { ScrollArea } from '@mantine/core';
 
 export function Ay2425S1Page() {
 
@@ -56,7 +57,9 @@ export function Ay2425S1Page() {
 
   return (
     <LayoutPage>
-      <Semester {...semesterContent}/>
+      <ScrollArea h='100vh' type='scroll' scrollHideDelay={500}>
+        <Semester {...semesterContent}/>
+      </ScrollArea>
     </LayoutPage>
   );
 }

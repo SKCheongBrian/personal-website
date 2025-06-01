@@ -1,12 +1,13 @@
 .title {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    /* color: light-dark(var(--mantine-color-black), var(--mantine-color-white)); */
+    color: light-dark(var(--mantine-color-myColor-6), var(--mantine-color-myColor-4));
     font-size: rem(60px);
     font-weight: 700;
     letter-spacing: rem(-2px);
 }
 
 .subtitle {
-    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    color: light-dark(var(--mantine-color-myColor-6), var(--mantine-color-myColor-4));
     font-size: rem(40px);
     font-weight: 400;
     letter-spacing: rem(-2px);

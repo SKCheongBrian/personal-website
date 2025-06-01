@@ -1,5 +1,5 @@
 
-	
+
 # Introduction: What is LL Parsing?
 
 Before continuing, just note that a lot of the information here was after I read the [wikipedia
@@ -217,7 +217,7 @@ And there you have it! The First sets.
 
 ### Follow set
 
-Turns out that just computing the First set would not be enough. The reason for this is that some nonterminals can
+Turns out that just computing the First set would not be enough. The reason for this is that some nonterminals may
 derive ϵ, therefore we would need to know what other symbols may follow after that. That is where follow sets come into
 play. The parser should still use the rule *A → γ* if ϵ is in First(γ) and it sees the next token could be a token that
 belongs after A (or the token **follows** A). So in other words, Follow(A) is the set of nonterminals that could appear

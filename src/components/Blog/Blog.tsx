@@ -1,9 +1,9 @@
-import { Title, Text, Divider, Code, Blockquote, Anchor } from "@mantine/core";
-import Markdown from "markdown-to-jsx";
-import { IconCircle } from "@tabler/icons-react";
+import Markdown from 'markdown-to-jsx';
+import { Anchor, Blockquote, Code, Divider, Text, Title } from '@mantine/core';
+import classes from './Blog.module.css';
+import { theme } from '../../theme'
 
-export function Blog({ content }: {content: string}) {
-  
+export function Blog({ content }: { content: string }) {
   return (
     <>
       <Markdown
@@ -12,7 +12,7 @@ export function Blog({ content }: {content: string}) {
             h1: {
               component: Title,
               props: {
-	      	c: 'blue',
+                className: classes.title,
                 order: 1,
                 mx: '40',
                 my: 'md',
@@ -21,21 +21,21 @@ export function Blog({ content }: {content: string}) {
             h2: {
               component: Title,
               props: {
-	      	c: 'blue',	      
+                className: classes.subtitle,
                 order: 2,
                 mx: '40',
-                my: 'md'
+                my: 'md',
               },
             },
-	    h3: {
-	      component: Title,
-	      props: {
-	      	c: 'blue',	      
-	        order: 3,
-		mx: '40',
-		my: 'md',
-	      },
-	    },
+            h3: {
+              component: Title,
+              props: {
+                className: classes.subsubtitle,
+                order: 3,
+                mx: '40',
+                my: 'md',
+              },
+            },
             p: {
               component: Text,
               props: {
@@ -48,37 +48,37 @@ export function Blog({ content }: {content: string}) {
               component: Anchor,
               props: {
                 underline: 'never',
-              }
+                className: classes.anchor,
+              },
             },
             hr: {
               component: Divider,
               props: {
                 my: 'md',
-              }
+              },
             },
             code: {
               component: Code,
               props: {
                 block: true,
                 mx: '100',
-              }
+              },
             },
             em: {
               component: Code,
-              props: {
-              
-              }
+              props: {},
             },
             blockquote: {
               component: Blockquote,
               props: {
-                color: 'gray',
+                color: theme.colors?.myColor?.[4],
                 mx: '80',
-                my: 'xs'
-              }
-            }
+                my: 'xs',
+              },
+            },
           },
-        }}>
+        }}
+      >
         {content}
       </Markdown>
     </>

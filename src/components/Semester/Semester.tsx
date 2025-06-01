@@ -34,7 +34,7 @@ export function Semester(semesterContent: SemesterContent) {
   const fileRows = semesterContent.files.map(
     (row) => {
       return (
-        <Table.Tr>
+        <Table.Tr key={row.name}>
           <Table.Td>
             <Text
               variant='subtle'
