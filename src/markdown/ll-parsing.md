@@ -96,7 +96,7 @@ Let's take a look at the starting symbol *E*. It has 2 rules in which it can app
 possible, since at *id* is a terminal that *E + T* and *T* could start with.  This is a first-first conflict (more on
 that later). The parser at this point, cannot know with certainty which of the 2 rules to apply as both begin with *id*.
 
-Even worse, rule 1. is left-recursive. 
+Even worse, rule 1. is left-recursive.
 
 Why is this an issue?
 
